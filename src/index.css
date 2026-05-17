@@ -1,0 +1,58 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: 'Syne', system-ui, sans-serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+
+  --color-surface: #f8faf9;
+  --color-surface-elevated: #ffffff;
+  --color-ink: #0f1419;
+  --color-ink-muted: #5c6670;
+  --color-accent: #0d9488;
+  --color-accent-soft: #ccfbf1;
+  --color-border: #e2e8f0;
+  --color-glow: rgba(13, 148, 136, 0.15);
+}
+
+.dark {
+  --color-surface: #0a0e12;
+  --color-surface-elevated: #12181f;
+  --color-ink: #f1f5f9;
+  --color-ink-muted: #94a3b8;
+  --color-accent: #2dd4bf;
+  --color-accent-soft: #134e4a;
+  --color-border: #1e293b;
+  --color-glow: rgba(45, 212, 191, 0.12);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface font-body text-ink antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent/25 text-ink;
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply px-5 py-20 sm:px-8 lg:px-12 lg:py-28;
+  }
+
+  .container-narrow {
+    @apply mx-auto max-w-5xl;
+  }
+
+  .gradient-mesh {
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -20%, var(--color-glow), transparent),
+      radial-gradient(ellipse 60% 40% at 100% 0%, var(--color-glow), transparent);
+  }
+}
