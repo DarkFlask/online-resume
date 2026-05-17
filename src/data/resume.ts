@@ -189,4 +189,15 @@ export const certifications: Certification[] = [
     pdf: '/certificates/ibm-fundamentals.pdf',
     imageAlt: 'IBM SkillsBuild Information Technology Fundamentals certificate for Miguel P. Rivera',
   },
+  {
+    id: 'udemy-frontend',
+    title: 'The Complete Front-End Web Development: Start your journey!',
+    issuer: 'Udemy · Instructor: Camron R.',
+    date: 'April 5, 2026 · 9 hours',
+    image: '/certificates/udemy-frontend-web-development.png',
+    imageAlt:
+      'Udemy certificate of completion for The Complete Front-End Web Development course, Miguel Rivera',
+    verifyUrl:
+      'https://www.udemy.com/certificate/UC-3032692d-baec-4def-a713-11fe19332830/',
+  },
 ]
