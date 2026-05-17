@@ -58,14 +58,32 @@ export const skillGroups: SkillGroup[] = [
   },
 ]
 
-export const experience = [
+export interface ExperienceEntry {
+  role: string
+  company: string
+  type: string
+  start: string
+  end: string
+  period: string
+  duration?: string
+  location?: string
+  points: string[]
+}
+
+export const experience: ExperienceEntry[] = [
   {
     role: 'UI/UX QA Intern',
     company: 'SparkleStar International Corporation',
-    period: 'Internship',
+    type: 'On-site Practicum',
+    start: '2026-02',
+    end: '2026-05',
+    period: 'February – May 2026',
+    duration: '486 hours · ~3 months',
+    location: 'On-site · IT Department',
     points: [
       'Conducted UI/UX testing and identified usability issues to improve interface quality and user experience.',
       'Collaborated with developers and designers in validating UI implementations and QA workflows.',
+      'Supported quality assurance workflows across design handoffs and development releases.',
     ],
   },
 ]
