@@ -168,17 +168,17 @@ export const certifications: Certification[] = [
     imageAlt: 'SparkleStar International Corporation internship completion certificate for Miguel P. Rivera',
   },
   {
-    id: 'certiport-databases-network',
+    id: 'certiport-network-security',
     title: 'Information Technology Specialist – Network Security',
     issuer: 'Certiport / Pearson',
-    pdf: '/certificates/certiport-67164413375.pdf',
+    pdf: '/certificates/certiport-9516446322.pdf',
     imageAlt: 'Certiport IT Specialist Network Security certificate',
   },
   {
     id: 'certiport-databases',
     title: 'Information Technology Specialist – Databases',
     issuer: 'Certiport / Pearson',
-    pdf: '/certificates/certiport-9516446322.pdf',
+    pdf: '/certificates/certiport-67164413375.pdf',
     imageAlt: 'Certiport IT Specialist Databases certificate',
   },
   {
