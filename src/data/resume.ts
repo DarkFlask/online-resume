@@ -175,6 +175,13 @@ export const certifications: Certification[] = [
     imageAlt: 'Certiport IT Specialist Databases and Network Security certificate',
   },
   {
+    id: 'certiport-network-security',
+    title: 'Information Technology Specialist – Network Security',
+    issuer: 'Certiport / Pearson',
+    pdf: '/certificates/certiport-9516446322.pdf',
+    imageAlt: 'Certiport IT Specialist Network Security certificate',
+  },
+  {
     id: 'ibm-fundamentals',
     title: 'Information Technology Fundamentals',
     issuer: 'IBM SkillsBuild',
