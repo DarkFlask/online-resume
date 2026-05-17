@@ -169,17 +169,17 @@ export const certifications: Certification[] = [
   },
   {
     id: 'certiport-databases-network',
-    title: 'Information Technology Specialist – Databases and Network Security',
-    issuer: 'Certiport / Pearson',
-    pdf: '/certificates/certiport-67164413375.pdf',
-    imageAlt: 'Certiport IT Specialist Databases and Network Security certificate',
-  },
-  {
-    id: 'certiport-network-security',
     title: 'Information Technology Specialist – Network Security',
     issuer: 'Certiport / Pearson',
-    pdf: '/certificates/certiport-9516446322.pdf',
+    pdf: '/certificates/certiport-67164413375.pdf',
     imageAlt: 'Certiport IT Specialist Network Security certificate',
+  },
+  {
+    id: 'certiport-databases',
+    title: 'Information Technology Specialist – Databases',
+    issuer: 'Certiport / Pearson',
+    pdf: '/certificates/certiport-9516446322.pdf',
+    imageAlt: 'Certiport IT Specialist Databases certificate',
   },
   {
     id: 'ibm-fundamentals',
