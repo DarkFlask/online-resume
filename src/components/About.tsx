@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { GraduationCap } from 'lucide-react'
-import { profile } from '../data/resume'
+import { education, profile } from '../data/resume'
 import { SectionHeading } from './SectionHeading'
 
 export function About() {
@@ -38,7 +38,7 @@ export function About() {
                 <p className="font-display text-lg font-bold text-ink">Adamson University</p>
                 <p className="text-sm text-ink-muted">BS Information Technology</p>
                 <p className="mt-1 text-sm font-medium text-accent">{profile.specialization}</p>
-                <p className="mt-2 text-sm text-ink-muted">Expected graduation: July 9, 2026</p>
+                <p className="mt-2 text-sm text-ink-muted">{education.graduation}</p>
               </div>
             </div>
           </motion.div>

@@ -3,75 +3,6 @@ import { Briefcase, Calendar, MapPin } from 'lucide-react'
 import { experience } from '../data/resume'
 import { SectionHeading } from './SectionHeading'
 
-const TIMELINE_MONTHS = ['Feb', 'Mar', 'Apr', 'May'] as const
-
-function parseYearMonth(value: string) {
-  const [year, month] = value.split('-').map(Number)
-  return { year, month }
-}
-
-function monthToIndex(month: number) {
-  return month - 2
-}
-
-function ExperienceTimeline({ start, end }: { start: string; end: string }) {
-  const startDate = parseYearMonth(start)
-  const endDate = parseYearMonth(end)
-
-  const startIndex = monthToIndex(startDate.month)
-  const endIndex = monthToIndex(endDate.month)
-  const span = endIndex - startIndex + 1
-  const total = TIMELINE_MONTHS.length
-  const barLeft = (startIndex / total) * 100
-  const barWidth = (span / total) * 100
-
-  return (
-    <div className="mt-6 rounded-xl border border-border bg-surface p-4 sm:p-5">
-      <div className="mb-3 flex items-center justify-between gap-2">
-        <p className="text-xs font-semibold uppercase tracking-wider text-ink-muted">Timeline</p>
-        <p className="text-xs font-medium text-accent">{startDate.year}</p>
-      </div>
-
-      <div className="relative">
-        <div className="mb-2 grid grid-cols-4 gap-1">
-          {TIMELINE_MONTHS.map((label, index) => (
-            <p
-              key={label}
-              className={`text-center text-xs font-medium ${
-                index >= startIndex && index <= endIndex ? 'text-accent' : 'text-ink-muted/60'
-              }`}
-            >
-              {label}
-            </p>
-          ))}
-        </div>
-
-        <div className="relative h-2.5 overflow-hidden rounded-full bg-border">
-          <motion.div
-            initial={{ width: 0 }}
-            whileInView={{ width: `${barWidth}%` }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="absolute top-0 h-full rounded-full bg-accent"
-            style={{ left: `${barLeft}%` }}
-          />
-        </div>
-
-        <div className="mt-2 grid grid-cols-4 gap-1">
-          {TIMELINE_MONTHS.map((label, index) => (
-            <span
-              key={`dot-${label}`}
-              className={`mx-auto block h-1.5 w-1.5 rounded-full ${
-                index >= startIndex && index <= endIndex ? 'bg-accent' : 'bg-border'
-              }`}
-            />
-          ))}
-        </div>
-      </div>
-    </div>
-  )
-}
-
 export function Experience() {
   return (
     <section className="section-padding border-t border-border">
@@ -124,8 +55,6 @@ export function Experience() {
                     </span>
                   )}
                 </div>
-
-                <ExperienceTimeline start={job.start} end={job.end} />
 
                 <ul className="mt-6 space-y-3 border-t border-border pt-6">
                   {job.points.map((point) => (

@@ -19,10 +19,10 @@ export interface SkillGroup {
 export const profile = {
   name: 'Miguel P. Rivera',
   shortName: 'Miguel Rivera',
-  role: 'IT Student & Web Application Developer',
+  role: 'BSIT Graduate & Web Application Developer',
   specialization: 'Consumer & Enterprise Application Development',
   summary:
-    'Detail-oriented Information Technology student specializing in Consumer & Enterprise Application Development, currently upskilling React.js. Experienced in developing responsive and database-driven web applications using HTML, CSS, JavaScript, PHP, and MySQL, with foundational knowledge in UI/UX Design, Software Quality Assurance, Git, and SDLC practices.',
+    'Detail-oriented Information Technology graduate specializing in Consumer & Enterprise Application Development, with hands-on experience in React.js and full-stack web development. Experienced in building responsive and database-driven web applications using HTML, CSS, JavaScript, PHP, and MySQL, with foundational knowledge in UI/UX Design, Software Quality Assurance, Git, and SDLC practices.',
   phones: ['0908 324 9057', '0991 802 5693'],
   emails: ['miguel.rivera@adamson.edu.ph', 'm1gu3l.rivera@gmail.com'],
   github: 'https://github.com/DarkFlask',
@@ -150,8 +150,8 @@ export const education = {
   degree: 'Bachelor of Science in Information Technology',
   specialization: 'Consumer & Enterprise Application Development',
   school: 'Adamson University',
-  period: '2022 – Present',
-  graduation: 'Expected Graduation: July 9, 2026',
+  period: '2022 – 2026',
+  graduation: 'Graduated July 9, 2026',
 }
 
 export interface Certification {
